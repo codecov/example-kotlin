@@ -3,5 +3,5 @@ language: kotlin
 before_install:
   sudo pip install codecov
 
-after_succcess:
+after_success:
   codecov

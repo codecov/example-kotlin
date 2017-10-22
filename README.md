@@ -6,6 +6,8 @@ Codecov Kotlin Example
 
 This repository serves as an **example** on how to use [Codecov Global][4] for Kotlin.
 
+**Using gradle?** See [gradle example](https://github.com/codecov/example-gradle)
+
 ## Usage
 
 

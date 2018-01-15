@@ -38,6 +38,9 @@ Add to your `.travis.yml` file.
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t uuid-repo-token
 ```
+### Coverage Data Beyond the EOF
+
+Sometimes there is coverage data reported that is beyond the EOF of a file. It is key that the uploader is able to find the length of each file being uploaded.
 
 ## Support
 

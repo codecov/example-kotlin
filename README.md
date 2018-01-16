@@ -1,15 +1,15 @@
-Codecov Kotlin Example
-======================
+# [Codecov][1] Kotlin Example
+## Guide
+### Travis Setup
 
-| [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] |
-| ----------------------- | ------------- | --------------------- |
-
-This repository serves as an **example** on how to use [Codecov Global][4] for Kotlin.
-
-## Usage
-
-
-### Add Jacoco plugin
+Add to your `.travis.yml` file.
+```yml
+language: groovy
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+```
+### Produce Coverage Reports
+#### Add Jacoco plugin
 ```xml
 <plugin>
   <groupId>org.jacoco</groupId>
@@ -31,35 +31,31 @@ This repository serves as an **example** on how to use [Codecov Global][4] for K
   </executions>
 </plugin>
 ```
-
-
-# Travis CI
-
+## Caveats
+### Private Repos
 Add to your `.travis.yml` file.
 ```yml
-language: groovy
-
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t uuid-repo-token
 ```
+### Coverage Data Beyond the EOF
 
-> All other CI you can simply run `bash <(curl -s https://codecov.io/bash)`.
+Sometimes there is coverage data reported that is beyond the EOF of a file. It is key that the uploader is able to find the length of each file being uploaded.
 
-## Private Repos
+## Support
 
-Add to your `.travis.yml` file.
-```yml
-env:
-  global:
-    - CODECOV_TOKEN=:uuid-repo-token
+### Contact
+- Intercom (in-app messanger)
+- Email: support@codecov.io
+- Slack: slack.codecov.io
+- [gh/codecov/support](https://github.com/codecov/support)
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-```
+1. More documentation at https://docs.codecov.io
+2. Configure codecov through the `codecov.yml`  https://docs.codecov.io/docs/codecov-yaml
 
-View source and learn more about [Codecov Global Uploader][4]
+
 
 [1]: https://codecov.io/
-[2]: https://twitter.com/codecov
-[3]: mailto:hello@codecov.io
-[4]: https://github.com/codecov/codecov-bash
+[2]: https://github.com/codecov/example-php/blob/master/.travis.yml#L15
+[3]: https://github.com/codecov/example-php/blob/master/.travis.yml#L18
+[4]: https://github.com/codecov/codecov-python

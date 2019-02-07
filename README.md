@@ -1,22 +1,23 @@
-Codecov Kotlin Example
-======================
-
-| [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] |
-| ----------------------- | ------------- | --------------------- |
-
-This repository serves as an **example** on how to use [Codecov Global][4] for Kotlin.
+# [Codecov][1] Kotlin Example
+## Guide
 
 **Using gradle?** See [gradle example](https://github.com/codecov/example-gradle)
 
-## Usage
+### Travis Setup
 
-
-### Add Jacoco plugin
+Add to your `.travis.yml` file.
+```yml
+language: java
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+```
+### Produce Coverage Reports
+#### Add Jacoco plugin
 ```xml
 <plugin>
   <groupId>org.jacoco</groupId>
   <artifactId>jacoco-maven-plugin</artifactId>
-  <version>0.5.8.201207111220</version>
+  <version>0.7.9</version>
   <executions>
     <execution>
       <goals>
@@ -33,35 +34,22 @@ This repository serves as an **example** on how to use [Codecov Global][4] for K
   </executions>
 </plugin>
 ```
-
-
-# Travis CI
-
+## Caveats
+### Private Repos
 Add to your `.travis.yml` file.
 ```yml
-language: groovy
-
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t uuid-repo-token
 ```
 
-> All other CI you can simply run `bash <(curl -s https://codecov.io/bash)`.
+### Coverage Data Beyond the EOF
 
-## Private Repos
+Kotlin coverage reports may include extra line data that exceeds the real length of the file. Codecov will fix this by extracting the file length from every `.kt` file and append it ot the report.
 
-Add to your `.travis.yml` file.
-```yml
-env:
-  global:
-    - CODECOV_TOKEN=:uuid-repo-token
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-```
+1. More documentation at https://docs.codecov.io
+2. Configure codecov through the `codecov.yml`  https://docs.codecov.io/docs/codecov-yaml
 
-View source and learn more about [Codecov Global Uploader][4]
+We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io)
 
 [1]: https://codecov.io/
-[2]: https://twitter.com/codecov
-[3]: mailto:hello@codecov.io
-[4]: https://github.com/codecov/codecov-bash

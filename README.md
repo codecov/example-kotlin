@@ -1,5 +1,8 @@
 # [Codecov][1] Kotlin Example
 ## Guide
+
+**Using gradle?** See [gradle example](https://github.com/codecov/example-gradle)
+
 ### Travis Setup
 
 Add to your `.travis.yml` file.

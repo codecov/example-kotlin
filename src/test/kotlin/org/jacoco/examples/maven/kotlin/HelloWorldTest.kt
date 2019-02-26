@@ -6,7 +6,7 @@ import kotlin.test.assertEquals
 class HelloWorldTest : TestCase() {
 
 	fun testAssert() : Unit {
-		assertEquals("Hello World!", HelloWorld().getMessage(false))
+		assertEquals("Hello Universe!", HelloWorld().getMessage(false))
 	}
 
 }

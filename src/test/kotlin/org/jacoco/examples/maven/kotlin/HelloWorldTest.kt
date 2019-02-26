@@ -9,7 +9,7 @@ class HelloWorldTest : TestCase() {
 		assertEquals("Hello World!", HelloWorld().getMessage(false))
 	}
 
-	fun testAssert() : Unit {
+	fun testAssertTrue() : Unit {
 		assertEquals("Hello World!", HelloWorld().getMessage(true))
 	}
 }

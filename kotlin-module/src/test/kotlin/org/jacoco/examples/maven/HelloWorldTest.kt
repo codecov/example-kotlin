@@ -1,6 +1,8 @@
-package maven.kotlin.beta
+package org.jacoco.examples.maven
 
 import junit.framework.TestCase
+import org.jacoco.examples.maven.HelloWorld
+
 //import kotlin.test.assertEquals
 
 class HelloWorldTest : TestCase() {

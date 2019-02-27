@@ -1,4 +1,4 @@
-package maven.kotlin.beta
+package org.jacoco.examples.maven
 
 class HelloWorld {
 

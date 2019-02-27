@@ -23,7 +23,7 @@
 
   <packaging>pom</packaging>
 
-  <name>JaCoCo Maven plug-in example for Kotlin project</name>
+  <description>JaCoCo Maven plug-in example for Kotlin project</description>
   <url>http://www.eclemma.org/jacoco</url>
 
   <properties>
@@ -94,7 +94,7 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.7.9</version>
+        <version>0.8.3</version>
         <executions>
           <execution>
             <goals>

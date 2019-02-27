@@ -1,3 +1,6 @@
+package org.jacoco.examples.maven.kotlin
+
+import Redact
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse

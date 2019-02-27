@@ -1,4 +1,4 @@
-package org.jacoco.examples.maven.kotlin
+package maven.kotlin.beta
 
 data class Redact(
         val pii: String

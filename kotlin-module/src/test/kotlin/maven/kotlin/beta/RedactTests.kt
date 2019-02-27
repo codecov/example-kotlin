@@ -1,4 +1,4 @@
-package org.jacoco.examples.maven.kotlin
+package maven.kotlin.beta
 
 import kotlin.test.Test
 import kotlin.test.assertEquals

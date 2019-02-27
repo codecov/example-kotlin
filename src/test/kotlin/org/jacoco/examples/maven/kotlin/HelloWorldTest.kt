@@ -1,7 +1,7 @@
 package org.jacoco.examples.maven.kotlin
 
 import junit.framework.TestCase
-import kotlin.test.assertEquals
+//import kotlin.test.assertEquals
 
 class HelloWorldTest : TestCase() {
 
@@ -10,6 +10,6 @@ class HelloWorldTest : TestCase() {
 	}
 
 	fun testAssertTrue() : Unit {
-		assertEquals("Hello World!", HelloWorld().getMessage(true))
+		assertEquals("Hello Universe!", HelloWorld().getMessage(true))
 	}
 }

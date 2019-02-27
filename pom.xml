@@ -17,6 +17,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <modules>
+    <module>kotlin-beta</module>
     <module>kotlin-module</module>
   </modules>
 

@@ -1,4 +1,6 @@
 # [Codecov][1] Kotlin Example
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-kotlin.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-kotlin?ref=badge_shield)
+
 ## Guide
 
 **Using gradle?** See [gradle example](https://github.com/codecov/example-gradle)
@@ -53,3 +55,7 @@ Kotlin coverage reports may include extra line data that exceeds the real length
 We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io)
 
 [1]: https://codecov.io/
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-kotlin.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-kotlin?ref=badge_large)

@@ -1,3 +1,8 @@
+# This Repo is not current.
+We recommend following https://github.com/codecov/kotlin-standard at this time.
+
+----
+
 # [Codecov][1] Kotlin Example
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-kotlin.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-kotlin?ref=badge_shield)
 
